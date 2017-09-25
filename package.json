@@ -1,0 +1,17 @@
+{
+  "name": "ml-programming",
+  "version": "1.0.1",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel src -d build --presets es2015,stage-2",
+    "serve": "node build/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "dependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
