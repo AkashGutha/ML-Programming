@@ -1,8 +1,8 @@
 export default class LuisQuery {
 
-  constructor() {
+  constructor(url) {
     this.LUIS_URL =
-      "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/4c7b2108-85f7-4a47-b509-f7ef053de4d8?subscription-key=d73b4400d6d745c6b06758e474492522&verbose=true&timezoneOffset=0&spellCheck=true&q=";
+      "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/4c7b2108-85f7-4a47-b509-f7ef053de4d8?subscription-key=d73b4400d6d745c6b06758e474492522&verbose=true&timezoneOffset=0&spellCheck=true&q=" || url;
   }
 
   getIntent = (payload) => {
