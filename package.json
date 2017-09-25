@@ -23,7 +23,10 @@
     "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2",
     "build": "babel src -d build --presets es2015,stage-2",
     "serve": "node build/index.js",
-    "test": "npm run build && mocha --compilers js:babel-core/register"
+    "clean": "rmdir /s build",
+    "init": "mkdir build",
+    "pretest": "npm run clean && npm run init && npm run build",
+    "test": "mocha --compilers js:babel-core/register"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
