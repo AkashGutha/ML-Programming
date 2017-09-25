@@ -1,6 +1,19 @@
 {
   "name": "ml-programming",
   "version": "1.0.1",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashGutha/ML-Programming.git"
+  },
+  "keywords": ["Machien learning", "LUIS", "Programming", "Language"],
+  "author": "AkashGutha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AkashGutha/ML-Programming/issues"
+  },
+  "homepage": "https://github.com/AkashGutha/ML-Programming#readme",
+  "description": "A simple experiment to write programs using natural language. The NLP is done by Microsoft's LUIS in the cloud. The NLP can also be done offline by training neural networks or better systems",
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2",
     "build": "babel src -d build --presets es2015,stage-2",
